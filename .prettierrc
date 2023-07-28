@@ -1,0 +1,6 @@
+{
+	"trailingComma": "none",
+	"useTabs": true,
+	"printWidth": 140,
+	"plugins": ["prettier-plugin-packagejson"]
+}

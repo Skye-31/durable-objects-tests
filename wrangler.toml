@@ -1,0 +1,15 @@
+name = "skye-do-tests"
+main = "src/index.ts"
+account_id = "db47db45acd22a503f31e76887a98caa"
+compatibility_date = "2023-07-28"
+
+compatibility_flags = [ "nodejs_compat" ]
+
+[durable_objects]
+bindings = [
+    { name = "DO", class_name = "MyDurableObject" }
+]
+
+[[migrations]]
+tag = "v1"
+new_classes = ["MyDurableObject"]

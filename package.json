@@ -1,0 +1,22 @@
+{
+	"name": "skye-do-tests",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"check": "pnpm check:format",
+		"check:format": "prettier . --check",
+		"deploy": "wrangler deploy",
+		"dev": "wrangler dev",
+		"format": "prettier . --write",
+		"start": "wrangler dev",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^4.20230724.0",
+		"prettier": "^3.0.0",
+		"prettier-plugin-packagejson": "^2.4.5",
+		"typescript": "^5.1.6",
+		"vitest": "^0.33.0",
+		"wrangler": "3.4.0"
+	}
+}
